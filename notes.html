@@ -1,0 +1,85 @@
+<!--this is a html comment and it is usually ignored by the browser-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>my notes</title>
+  </head>
+  <body>
+    <h1>My HTML Notes</h1>
+    <h2> Introduction to Programming Nanodegree Course</h2>
+    <h3>What is HTML</h3>
+      <p>HTML stands for Hypertext Markup Language.HTML documents are the building block of the web.It is made up of texts that the user will actually read in their browser.</p>
+    <h3>The Web</h3>
+      <p>The Web (or World Wide Web) is a collection of documents and other files. Most of the documents are made using Hypertext Markup Language (HTML).</p>
+    <h3>Markup</h3>
+      <p><em>Markup</em> is used in HTML to tell the browser how the text should look like. Most of the markups contain an opening tag and a closing tag.The tag enclosed in the less than and greater than symbol is called an <em>opening tag</em> and when the "/" symbol is placed after the less than sign, it is called a <em> closing tag</em>. The whole write up is called an <em> element </em></p>
+      <p><em>Whitespace</em> is a term programmers use to describe: spaces, tabs and line breaks.<br>
+         The line break tag "br" enclosed within the less than and greater than symbol is used to indicate a line break in poems.It doesn't have a closing tag, this is because it has no element in it. It is thereby called a "void or empty element"</p>
+
+         <p><strong>More on HTML elements</strong>
+            The strong tag makes a text bold.<br>
+            The <mark>Mark</mark> tag is for highlight as shown here. <br>
+            The sub tag moves the text vertically as a subscript: log<sub>2</sub>10 <br>
+            The sup tag moves the text vertically as a superscript: xy<sup>6</sup>
+         </p>
+         <p><strong><em>Nested </em> </strong>elements mean one element going inside another. Note that elements can not be overlapped and a paragraph cannot be nested into another.
+         The h1 element can be used for headlines, or section headings. There are actually six of these heading elements: h1 through h6</p>
+     <h4>Block and Inline Elements</h4>
+         <p>The <strong>paragraph</strong> element is a block element, which means the browser creates a box around it. It also generates a margin around this box, to visually separate the paragraph from surrounding elements. In contrast, br is an inline element that just creates a line break.  It doesn't have a box around it and doesn't create any margin.
+            <br><br>
+            The <strong>div</strong> is a short form for  division element.It can be used to divide a page into different sections. It is a block element like the p element, but while a p element is specifically meant to contain text, the div element is a generic container for whatever other elements you might want to put inside. You can use the div element to organize the content and divide the page into sections.
+         </p>
+
+         <p><strong>Lists and Implied Closing Tags</strong>  There are some html elements that must come inside another, example is the li(list) element.li elements must be a part of a list either
+            <ul>
+               <li>ordered (ol) or
+               <li>unordered (ul)
+            </ul>
+          The ordered list are displayed with numbers while unordered lists are displayed with bullets. List elements can also be nested like this:<br><br>
+          Types of Foundations are:
+            <ol>
+               <li>Shallow Foundation
+                  <ul>
+                     <li>Strip
+                     <li>Pad
+                  </ul>
+               <li>Deep Foundation
+                  <ul>
+                     <li>Pile
+                     <li>Raft
+                  </ul>
+            </ol>
+         Another thing is that, the closing tags on li elements are optional. The (p) element is another element that has an optional closing tag. When the closing tag is left off, the browser figures out where the element should be closed when it gets to a start tag of an element that can not be inside the other open element, even though you didn't explicitly tell it.
+         <p><strong>Links and "a" tag: </strong> The (a) tag is the short form of anchor tag. It is used to link other web pages.it has an opening and a closing tag.<br>
+            In the opening tag, there is an attribute which includes:
+            <ul>
+               <li> The name of the attribute: hypertext reference"href" and
+               <li> an equality sign"=" which introduces the
+               <li> Value of the attribute :webpage to be linked. This is enclosed in quotation marks.
+           </ul>
+        Immediately after the opening tag, the link text which the users see on the webpage that refers to the link is written. Then the closing tag is included. Here is an example: <a href="https://www.mydominioncity.com/">Dominion City </a>
+        The target attribute specifies where to open the linked document,if you want the page to open up in a new browser include thefollowingin the opening [a] tag:target="_blank".
+        <p><strong>Adding Images: </strong>The (img) element is used to link images to a webpage. It is an empty element and there is no closing tag. It has two attributes;
+           <ol>
+              <li>scr (source) attribute which contains the url of the image</li>
+              <li>alt attribute contains the text description of the image to be shown if the image is not loaded or can not be seen.</li>
+           </ol>
+           The attribute are introduced by an equality sign and are enclosed in quotation mark, here are images using the img element:
+               <img
+                    src="pexels-photo-749353.jpeg"
+                    alt="shopping bags">
+
+              <img
+                   src="https://placebear.com/1400/600"
+                   alt="bear">
+
+       <p>The image of shopping bags is displayed using a relative path while that of the bear is displayed using an absolute path</p>
+       <p><strong>Note: </strong> To make a link open up in a new webpage, the target attribute is added like this :<a href="https://www.mydominioncity.com/" target="_blank">Dominion City </a></p>
+       <p><strong>DOCTYPE Declaration:</strong> Document Type declaration The (!DOCTYPE) must be the very first thing in a HTML document before the (html) tag.  It is not an HTML tag; it is an instruction to the web browser about what type of document to expect.<br>
+           <strong>HTML tag:     </strong> The (html) tag tells the browser that this is an HTML document. It is the container for all other HTML elements (except for the !DOCTYPE tag).<br>
+           <strong>HTML head tag:</strong> The (head) element is a container for all the head elements.It can include a title for the document, scripts, styles, meta information, and more.<br>
+           <strong>title element:</strong> This element is required in an HTML document. It tells the browser the name tobe displayed inthe browser tab.<br>
+           <strong>body element:</strong>The (body) tag defines the document's body. It contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
+       </p>
+</body>
+</html>
